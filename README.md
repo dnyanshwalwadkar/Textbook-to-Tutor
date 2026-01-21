@@ -101,11 +101,8 @@ Upload `step3_train_llama.ipynb` and the generated `.jsonl` file to [Google Cola
 **4. Run Locally:**
 Move the `.gguf` file to this folder and run:
 ```bash
-ollama create marathi-10th-history-civics -f Modelfile
+./setup_model.sh  # Sets up the model
+python3 step4_local_inference.py  # Starts the Chat UI
 ```
-4.  Run it:
-    ```bash
-    ollama run marathi-10th-history-civics
-    ```
 > 💡 **Need help?** Read [OLLAMA_USAGE.md](OLLAMA_USAGE.md) for detailed model management instructions.
 ```
