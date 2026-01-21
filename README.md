@@ -97,4 +97,6 @@ ollama create marathi-10th-history-civics -f Modelfile
 4.  Run it:
     ```bash
     ollama run marathi-10th-history-civics
+    ```
+> 💡 **Need help?** Read [OLLAMA_USAGE.md](OLLAMA_USAGE.md) for detailed model management instructions.
 ```
