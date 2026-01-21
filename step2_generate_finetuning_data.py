@@ -54,10 +54,11 @@ Your task is to generate a **Fine-Tuning Dataset** from this content.
 **Generation Requirements (Output in Marathi):**
 Generate a JSON object containing:
 1. **"summary"**: A concise paragraph explaining the core concept of this page.
-2. **"qa_pairs"**: A list of 3-5 Question-Answer pairs:
+2. **"qa_pairs"**: A list of **5 to 8** Question-Answer pairs (The more the better, for deep training):
    - **Visual QA**: If there is a diagram description, ask a question that requires understanding that visual (e.g., "Based on the map...").
-   - **Reasoning**: Ask a "Why" or "How" question (Chain of Thought).
-   - **Factual**: A direct concept definition.
+   - **Reasoning**: Ask "Why" or "How" questions (Chain of Thought).
+   - **Factual**: Direct concept definitions.
+   - **Application**: "Give an example of..." or "How does this apply to..."
 
 **Tone:** Academic, helpful, and strictly in **Marathi**.
 """
