@@ -1,0 +1,8 @@
+FROM ./unsloth.Q4_K_M.gguf
+
+# Set the system prompt to style it like a textbook expert
+SYSTEM "You are an expert AI tutor specialized in Marathi State Board History and Political Science. Answer questions accurately based on the textbook content."
+
+# Parameters to make it creative yet factual
+PARAMETER temperature 0.3
+PARAMETER context_window 4096

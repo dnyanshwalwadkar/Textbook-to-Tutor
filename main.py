@@ -6,15 +6,19 @@ import typing_extensions
 from pathlib import Path
 from pdf2image import convert_from_path
 from PIL import Image
+from dotenv import load_dotenv
 
 # --- Configuration ---
+load_dotenv() # Load variables from .env file
+
 # We use Pro because Flash sometimes struggles with complex Marathi handwritten-style fonts 
 # or dense academic layouts. Pro is slower but "High Standard."
 MODEL_NAME = "gemini-2.5-flash" 
 
 if "GOOGLE_API_KEY" not in os.environ:
-    # Replace with your actual key
-    os.environ["GOOGLE_API_KEY"] = "AIzaSyAtzSq0M-vbTKowuRJBeMqyb2DDyzpSQPs"
+    print("❌ Error: GOOGLE_API_KEY not found in environment variables.")
+    print("   Please create a .env file with GOOGLE_API_KEY='your_key'")
+    exit(1)
 
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 

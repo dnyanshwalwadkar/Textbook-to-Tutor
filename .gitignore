@@ -1,0 +1,18 @@
+# Environment variables
+.env
+.env*
+
+# Data
+raw_pdfs/
+processed_dataset/
+finetuning_ready/
+outputs/
+*.gguf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# System
+.DS_Store

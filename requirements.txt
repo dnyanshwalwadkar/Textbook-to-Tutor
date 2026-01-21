@@ -2,3 +2,4 @@ google-generativeai
 pdf2image
 Pillow
 typing-extensions
+python-dotenv
