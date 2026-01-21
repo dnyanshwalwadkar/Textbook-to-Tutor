@@ -46,6 +46,7 @@ We take our synthetic data to **Google Colab**.
 -   Using **Unsloth**, we fine-tune Llama 3 8B.
 -   We use **LoRA (Low-Rank Adaptation)** to train only a small fraction of weights (efficient).
 -   We export the result as a **GGUF** file (Quantized format for laptops).
+> 📘 **Want to understand the math?** Read [FINETUNING_GUIDE.md](FINETUNING_GUIDE.md) for a deep dive into LoRA, Quantization, and Hyperparameters.
 
 ### Step 4: Run (The Voice) -> Local Inference
 We use **Ollama** to serve the model.
@@ -91,6 +92,9 @@ Upload `step3_train_llama.ipynb` and the generated `.jsonl` file to [Google Cola
 **4. Run Locally:**
 Move the `.gguf` file to this folder and run:
 ```bash
-ollama create marathi-tutor -f Modelfile
-ollama run marathi-tutor
+ollama create marathi-10th-history-civics -f Modelfile
+```
+4.  Run it:
+    ```bash
+    ollama run marathi-10th-history-civics
 ```
